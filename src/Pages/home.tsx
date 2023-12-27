@@ -5,25 +5,25 @@ import { useNavigate } from "react-router-dom";
 import { RiSearch2Line } from "react-icons/ri";
 
 import home_bg from "../themes/PNGs/home_bg.png";
-import HomeHeader from "../components/HomeHeader";
+import Header from "../components/Header";
 import {
-  LatestTrendType,
-  SuggestionType,
-  fetchLatestTrendData,
-  fetchSuggestionData,
-} from "../FakerData/FakerData";
+  LatestTrendProps,
+  SmartProps,
+  FetchProducts,
+  FetchSmartData,
+} from "../fakeapi/FakeApi";
 
 const Home = () => {
   const [showSuggestionBox, setShowSuggestionBox] = useState(false);
-  const [latestTrendsData, setLatestTrendsData] = useState<LatestTrendType[]>();
-  const [suggestionData, setSuggestionData] = useState<SuggestionType[]>();
+  const [latestTrendsData, setLatestTrendsData] = useState<LatestTrendProps[]>();
+  const [suggestionData, setSuggestionData] = useState<SmartProps[]>();
 
   const navigate = useNavigate();
 
   const getBoxProducts = () => {
     setShowSuggestionBox((prev) => !prev);
-    setLatestTrendsData(fetchLatestTrendData());
-    setSuggestionData(fetchSuggestionData());
+    setLatestTrendsData(FetchProducts());
+    setSuggestionData(FetchSmartData());
   };
 
   const onSubmitHandler = (e: any) => {
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <div style={{ backgroundImage: `url(${home_bg})` }} className="home">
-      <HomeHeader />
+      <Header />
       <div className="home_content">
         <form className="input_container" onSubmit={(e) => onSubmitHandler(e)}>
           <input
@@ -92,4 +92,3 @@ const Home = () => {
   );
 };
 
-export default Home;

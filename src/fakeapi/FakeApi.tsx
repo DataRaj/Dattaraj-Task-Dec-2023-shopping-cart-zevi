@@ -18,7 +18,7 @@ export interface ProductProps{
     productsReviews: number;
 }
 
-export function fetchSmartData(){
+export function FetchSmartData(){
     const smartData : SmartProps[] = []
     
     for (let i = 0; i <=5; i++) {
