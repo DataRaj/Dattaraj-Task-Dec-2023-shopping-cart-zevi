@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { RiSearch2Line } from "react-icons/ri";
 
-import home_bg from "../themes/PNGs/home_bg.png";
+import home_bg from "../styles/home_bg.png";
 import Header from "../components/Header";
 import {
   LatestTrendProps,

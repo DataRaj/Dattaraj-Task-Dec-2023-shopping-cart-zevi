@@ -1,8 +1,8 @@
 import React from "react";
-import "./ProductsResults.scss";
+import "./results.scss";
 
 import { ProductProps } from "../fakeapi/FakeApi";
-import ProductItem from "./Products";
+import ProductItem from "./ProductData";
 
 interface ProductsInterface {
   products: ProductProps[];

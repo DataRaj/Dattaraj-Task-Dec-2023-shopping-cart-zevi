@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Products.scss";
+import "./products.scss";
 import NavBar from "../components/Navbar";
 
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";

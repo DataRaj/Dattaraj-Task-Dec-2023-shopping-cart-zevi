@@ -1,5 +1,5 @@
 import React from "react";
-import "./NavBar.scss";
+import "./navbar.scss";
 import Logo from "../styles/logo.svg";
 import { RiSearch2Line } from "react-icons/ri";
 

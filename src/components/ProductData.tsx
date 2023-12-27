@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './products.scss'
+import './productData.scss'
 import { ProductProps } from "../fakeapi/FakeApi";
 import { ratingBox } from "../utilities/utilities";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
