@@ -13,7 +13,7 @@ import {
   FetchSmartData,
 } from "../fakeapi/FakeApi";
 
-const Home = () => {
+ export default function Home(){
   const [showSuggestionBox, setShowSuggestionBox] = useState(false);
   const [latestTrendsData, setLatestTrendsData] = useState<LatestTrendProps[]>();
   const [suggestionData, setSuggestionData] = useState<SmartProps[]>();
