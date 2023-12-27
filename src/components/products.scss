@@ -1,16 +1,49 @@
-.imgs{
+.product_img_container {
     position: relative;
-}
-
-.add_to_cart_container{
+  }
+  
+  .wishlist_icon_container {
     text-align: end;
     position: absolute;
-    top: 0.3rem;
-    right: 0.3rem;
-    font-size: 1.6rem;
+    top: 0.2rem;
+    right: 0.4rem;
+    font-size: 1.5rem;
     z-index: 10;
-
-    & > *{
-        cursor: pointer;
-    } 
-}
+  
+    & > * {
+      cursor: pointer;
+    }
+  }
+  
+  .product_img {
+    width: 100%;
+    border-radius: 0.2rem;
+  }
+  
+  .view_product {
+    position: absolute;
+    bottom: 0.4rem;
+    padding: 0.7rem;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(109, 132, 255, 0.71);
+    color: white;
+    cursor: pointer;
+  }
+  
+  .rating_and_reviews_container {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+  .org_price {
+    text-decoration: line-through;
+    color: gray;
+    padding-right: 0.2rem;
+  }
+  
+  .dis_price {
+    color: rgb(6, 101, 243);
+  }
+  
